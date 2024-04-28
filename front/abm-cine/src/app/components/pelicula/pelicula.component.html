@@ -1,0 +1,13 @@
+
+<div *ngFor="let item of listaPeliculas" class="movie-card">
+    <div class="movie-info">
+        <p>ID: {{ item.id }}</p>
+        <p>Nombre: {{ item.nombre }}</p>
+        <p>Duración: {{ item.duracion }}</p>
+    </div>
+    <div>
+        <button (click)="eliminarPelicula(item.id)">Eliminar</button>
+        <button (click)="editarPelicula(item.id)">Editar</button>
+        <button (click)="verMas(item.id)">Ver más</button>
+    </div>
+</div>

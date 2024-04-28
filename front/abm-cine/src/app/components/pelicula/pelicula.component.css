@@ -1,0 +1,57 @@
+/* Estilo general de las cartas de película */
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  width: 300px;
+}
+
+/* Estilo del contenedor de información de la película */
+.movie-info {
+  margin-bottom: 15px;
+}
+
+/* Estilo para los botones */
+.movie-card button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.movie-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el botón de eliminar */
+.movie-card button:nth-child(1) {
+  background-color: #dc3545;
+}
+
+.movie-card button:nth-child(1):hover {
+  background-color: #c82333;
+}
+
+/* Estilo para el botón de editar */
+.movie-card button:nth-child(2) {
+  background-color: #ffc107;
+}
+
+.movie-card button:nth-child(2):hover {
+  background-color: #e0a800;
+}
+
+/* Estilo para el botón de ver más */
+.movie-card button:nth-child(3) {
+  background-color: #28a745;
+}
+
+.movie-card button:nth-child(3):hover {
+  background-color: #218838;
+}

@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="movie-details">
+        <h2>Detalle de la Película</h2>
+        <div class="movie-info">
+            <p><strong>ID:</strong> {{pelicula.id}}</p>
+            <p><strong>Nombre:</strong> {{pelicula.nombre}}</p>
+            <p><strong>Duración:</strong> {{pelicula.duracion}} minutos</p>
+            <!-- Puedes agregar más información aquí -->
+        </div>
+        <!-- Aquí puedes agregar más contenido relacionado con la película, como reseñas, actores, etc. -->
+    </div>
+    <div class="actions">
+        <button class="button" onclick="history.back()">Volver</button>
+    </div>
+</div>
+<div class="container">
+    <h2>Funciones:</h2>
+    <div class="container-funciones">
+        <div class="functions" *ngFor="let funcion of listaFunciones">
+            <div class="function-item">
+                <h3><strong>Id Funcion:</strong> {{funcion.id}}</h3>
+                <p>Horario: {{funcion.horario}}</p>
+                <p>{{funcion.sala}}</p>
+                <div class="actions">
+                    <button class="button-funcion" (click)="editarFuncion(pelicula.id,funcion.id)">Editar</button>
+                    <button class="button-funcion" (click)="eliminarFuncion(funcion.id)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn"> 
+        <button class="button" (click)="agregarFuncion(pelicula.id)"> Agregar </button>    
+    </div>
+</div>

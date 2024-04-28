@@ -1,0 +1,17 @@
+#i need a docker-compose.yaml file to run the dockerfiles on my two directorys for connect a frontend of angular with a backend of nodejs
+version: '3.7'
+services:
+  frontend:
+    build:
+    # The path to the directory containing the Dockerfile on the directory front and then abm-cine
+      context: ./front/abm-cine 
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+  backend:
+    build:
+      # The path to the directory containing the Dockerfile on the directory back
+      context: ./back
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"

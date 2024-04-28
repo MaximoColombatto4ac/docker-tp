@@ -1,0 +1,11 @@
+<form (ngSubmit)="guardarPelicula($event)">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="pelicula.nombre" required placeholder="Ingrese el nombre de la película">
+  </div>
+  <div>
+    <label for="duracion">Duración:</label>
+    <input type="text" id="duracion" name="duracion" [(ngModel)]="pelicula.duracion" required placeholder="Ingrese la duración de la película">
+  </div>
+  <button type="submit">{{ modoEditar ? 'Guardar Cambios' : 'Agregar Película' }}</button>
+</form>
